@@ -1,0 +1,34 @@
+.weather-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 50px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #5f5757;
+    background-color: #398fd6;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.main-temp {
+    font-size: 1.5em;
+}
+
+.min {
+    margin-right: 25px;
+}
+
+.max {
+    margin-left: 25px;
+}

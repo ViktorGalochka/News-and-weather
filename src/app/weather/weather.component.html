@@ -1,0 +1,16 @@
+<div class="wrap">
+  <h1>Weather in your city</h1>
+  <input type="text" class="search" (keydown.enter)="search(searchInp)" #searchInp placeholder="Show me the weather in...">
+  <app-city-weather 
+  *ngFor="let item of weathers"
+  [city] = "item.name"
+  [countryTicker] = "item.sys.country"
+  [pic] = "item.weather[0].icon"
+  [temperature] = "item.main.temp"
+  [minTemp] = "item.main.temp_min"
+  [maxTemp] = "item.main.temp_max"
+  [wet] = "item.main.humidity"
+  [wind] = "item.wind.speed"
+  [cloud] = "item.weather[0].main"
+  ></app-city-weather>
+</div>
