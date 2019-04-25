@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NewsService } from './news.service';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project1';
+  news: any[];
+  constructor(private newsService: NewsService) {
+  }
+  ngOnInit() {
+    this.news = this.newsService.getNews()
+  }
 }

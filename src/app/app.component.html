@@ -1,3 +1,14 @@
-<app-weather>
-  <app-city-weather></app-city-weather>
-</app-weather>
+<div class="general-wrap">
+  <ul class="article-list">
+    <app-news *ngFor="let item of news"
+    [source] = "item.source.name"
+    [heading] = "item.title"
+    [description] = "item.description"
+    [url] = "item.url"
+    [urlToImage] = "item.urlToImage"
+    ></app-news>
+  </ul>
+  <app-weather>
+    <app-city-weather></app-city-weather>
+  </app-weather>
+</div>

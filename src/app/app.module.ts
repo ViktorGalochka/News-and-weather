@@ -7,19 +7,25 @@ import { HttpClientModule } from '@angular/common/http';
 import { WeatherComponent } from './weather/weather.component';
 import { CityWeatherComponent } from './city-weather/city-weather.component';
 import { WeathersService } from './weathers.service';
+import { NewsComponent } from './news/news.component';
+import { NewsService } from './news.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    CityWeatherComponent
+    CityWeatherComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [WeathersService],
+  providers: [
+    WeathersService,
+    NewsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
