@@ -1,14 +1,26 @@
-<div class="general-wrap">
-  <ul class="article-list">
-    <app-news *ngFor="let item of news"
-    [source] = "item.source.name"
-    [heading] = "item.title"
-    [description] = "item.description"
-    [url] = "item.url"
-    [urlToImage] = "item.urlToImage"
-    ></app-news>
-  </ul>
-  <app-weather>
-    <app-city-weather></app-city-weather>
-  </app-weather>
-</div>
+<header>
+  <img src="../assets/img/logo_transparent.png" alt="logo">
+  <div class="social">
+    <ul>
+      <li>F</li>
+      <li>T</li>
+      <li>I</li>
+    </ul>
+  </div>
+</header>
+<main>
+  <div class="general-wrap">
+    <ul class="article-list">
+      <app-news *ngFor="let item of news"
+      [source] = "item.source.name"
+      [heading] = "item.title"
+      [description] = "item.description"
+      [url] = "item.url"
+      [urlToImage] = "item.urlToImage"
+      ></app-news>
+    </ul>
+    <app-weather>
+      <app-city-weather></app-city-weather>
+    </app-weather>
+  </div>
+</main>
