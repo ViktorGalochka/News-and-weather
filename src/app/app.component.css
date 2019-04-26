@@ -1,15 +1,28 @@
-html, body {
-	margin: 0;
-	padding: 0;
+@import '../assets/css/all.css';
+
+@font-face {
+	src: url('../assets/fonts/Lato/Lato-Regular/Lato-Regular.ttf');
+	font-family: 'Lato Regular';
 }
+
+@font-face {
+	font-family: 'Lato Regular';
+	src: url('../assets/fonts/Lato/Lato-Regular/Lato-Regular.eot');
+	src: url('../assets/fonts/Lato/Lato-Regular/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .general-wrap {
 	display: flex;
 	justify-content: space-around;
 }
 
 header {
+	position: relative;
 	width: 100%;
 	height: 120px;
+	line-height: 120px;
 	text-align: center;
 	background-color: rgba(35, 89, 139, 0.2);
 }
@@ -23,13 +36,37 @@ header img {
 }
 
 .social {
-	display: inline-block;
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 8%;
 }
 
-.social ul {
-	display: flex;
-	list-style-type: none;
+.facebook, .twitter, .instagram {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	background-color: #15a4fa;
+	text-align: center;
+	line-height: 40px;
+	border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #5f5757;	
+	color: #ffffff;
+	transition: background-color ease-out 0.2s;
+}
+
+.facebook:hover {
+	background-color: #3b5998;
+}
+
+.twitter:hover {
+	background-color: #72baf1;
+}
+
+.instagram:hover {
+	background-color: #c03792;
 }
 
 .article-list {
@@ -45,4 +82,17 @@ header img {
 
 .app-weather {
 	position: absolute;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(35, 89, 139, 0.2);
+}
+
+footer p {
+	margin-left: 25px;
+	font-family: 'Lato-Regular', sans-serif;
 }

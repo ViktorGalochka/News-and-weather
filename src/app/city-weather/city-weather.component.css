@@ -1,3 +1,16 @@
+@font-face {
+	src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.ttf');
+	font-family: 'Lato Regular';
+}
+
+@font-face {
+	font-family: 'Lato Regular';
+	src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.eot');
+	src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .weather-window {
     display: flex;
     flex-direction: column;
@@ -7,9 +20,9 @@
     border: 3px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #5f5757;
+    font-family: 'Lato-Regular', sans-serif;
     background-color: #398fd6;
     color: #fff;
-    font-family: Helvetica, sans-serif;
 }
 
 .city-name {
@@ -17,12 +30,18 @@
 }
 
 img {
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 75px;
     height: 75px;
 }
 
 .main-temp {
     font-size: 1.5em;
+}
+
+.temperature-range, p {
+    margin-top: 35px;
 }
 
 .min {
