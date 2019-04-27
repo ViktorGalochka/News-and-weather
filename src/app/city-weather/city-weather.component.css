@@ -1,14 +1,14 @@
 @font-face {
-	src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.ttf');
-	font-family: 'Lato Regular';
+    src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.ttf');
+    font-family: 'Lato Regular';
 }
 
 @font-face {
-	font-family: 'Lato Regular';
-	src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.eot');
-	src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Lato Regular';
+    src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.eot');
+    src: url('../../assets/fonts/Lato/Lato-Regular/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .weather-window {
@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    margin-left: 5px;
     padding: 40px;
     border: 3px solid #ccc;
     border-radius: 10px;
@@ -50,4 +51,96 @@ img {
 
 .max {
     margin-left: 25px;
+}
+
+@media (max-width: 1525px) {
+    .weather-window {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .weather-window {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .weather-window {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .weather-window {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .min, .max {
+        margin: 5px;
+    }
+
+    .temperature-range, p {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .weather-window {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .min {
+        margin-right: 25px;
+    }
+    
+    .max {
+        margin-left: 25px;
+    }
+
+    .temperature-range, p {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1035px) {
+    .temperature-range, p {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .weather-window {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .min {
+        margin-right: 15px;
+    }
+    
+    .max {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .weather-window {
+        padding: 3px;
+    }
+    .temperature-range, p {
+        margin-top: 25px;
+    }
+
+    .temperature-range {
+        font-size: 0.8em;
+    }
 }

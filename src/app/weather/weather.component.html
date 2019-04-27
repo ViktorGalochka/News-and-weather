@@ -1,6 +1,6 @@
 <div class="wrap">
   <h2>Weather in your city</h2>
-  <input type="text" class="search" (keydown.enter)="search(searchInp)" #searchInp placeholder="Show me the weather in...">
+  <input type="text" class="search" (keydown.enter)="search(searchInp)" #searchInp placeholder="Enter the city">
   <app-city-weather 
   *ngFor="let item of weathers"
   [city] = "item.name"

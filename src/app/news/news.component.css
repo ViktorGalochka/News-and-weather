@@ -54,3 +54,100 @@ a:hover {
     height: 100%;
     border-radius: 10px;
 }
+
+@media (max-width: 1550px) {
+    .picture {
+        width: 600px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 950px) {
+    .picture {
+        width: 450px;
+        height: 320px;
+    }
+    
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+    
+    h4 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    .article-description {
+        border-top: 1px solid #3b8ad4;
+    };
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    a {
+        font-size: 1.2em;
+        display:block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .article {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .article-description {
+        width: 95%;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+    }
+    
+    a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 490px) {
+    .picture {
+        width: 350px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 430px) {
+    .picture {
+        width: 320px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 380px) {
+    .picture {
+        width: 270px;
+        height: 250px;
+    }
+}
