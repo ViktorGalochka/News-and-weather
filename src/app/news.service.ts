@@ -12,8 +12,6 @@ export class NewsService {
   }
   getCurrentNews() {
     this.http.get("https://newsapi.org/v2/top-headlines?language=en&apiKey=0d9f464c57234f4baac7f64431d575ff").subscribe((data:any) => {
-    // this.news.push(data.articles[2]);
-    // this.news = data.articles;
     for(let a of data.articles) {
       this.news.push(a);
     }

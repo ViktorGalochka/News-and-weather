@@ -10,11 +10,10 @@ export class WeathersService {
     this.weathers = [];
   }
   getCurrentWheather(q) {
-    data: [];
+    // data: [];
     this.weathers.splice(0, 1);
-    this.http.get(`http://api.openweathermap.org/data/2.5/weather?&units=metric&q=${q}&APPID=b2745f9629915a9b867daa35359e4893`).subscribe((data:any) => {
+    this.http.get(`https://api.openweathermap.org/data/2.5/weather?&units=metric&q=${q}&APPID=b2745f9629915a9b867daa35359e4893`).subscribe((data:any) => {
     this.weathers.push(data);
-    console.log(this.weathers);
   })
 }  
 getWeathers() {
